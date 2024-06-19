@@ -1,4 +1,5 @@
 import React from "react";
+
 const Features = () => {
   const features = [
     {
@@ -64,9 +65,9 @@ const Features = () => {
   ];
 
   return (
-    <section className="py-14 mt-7">
+    <section className="py-14 mt-7 bg-gray-50">
       <div className="max-w-screen-xl mx-auto px-4 text-center text-gray-600 md:px-8">
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-2xl mx-auto mb-12">
           <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
             The fastest way to make Resume
           </h3>
@@ -75,17 +76,17 @@ const Features = () => {
             with our all-in-one resume platform.
           </p>
         </div>
-        <div className="mt-12">
-          <ul className="grid gap-y-8 gap-x-12 sm:grid-cols-2 lg:grid-cols-3">
+        <div>
+          <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {features.map((item, idx) => (
-              <li key={idx} className="space-y-3">
-                <div className="w-12 h-12 mx-auto bg-indigo-50 text-indigo-600 rounded-full flex items-center justify-center">
+              <li key={idx} className="space-y-3 bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                <div className="w-12 h-12 mx-auto bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center">
                   {item.icon}
                 </div>
                 <h4 className="text-lg text-gray-800 font-semibold">
                   {item.title}
                 </h4>
-                <p>{item.desc}</p>
+                <p className="text-gray-600">{item.desc}</p>
               </li>
             ))}
           </ul>
@@ -94,4 +95,5 @@ const Features = () => {
     </section>
   );
 };
+
 export default Features;

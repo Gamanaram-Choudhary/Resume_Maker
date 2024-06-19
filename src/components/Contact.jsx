@@ -1,3 +1,5 @@
+import React from "react";
+
 const Contact = () => {
   const contactMethods = [
     {
@@ -22,7 +24,7 @@ const Contact = () => {
           />
         </svg>
       ),
-      contact: "Gomtinagar Lucknow Uttar Pradesh",
+      contact: "Gomtinagar, Lucknow - Uttar Pradesh",
       title: "Our office",
     },
     {
@@ -68,28 +70,23 @@ const Contact = () => {
   ];
 
   return (
-    <main className="py-14 w-screen bg-gray-200">
-      <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
-        <div className="max-w-xl space-y-3">
-          <h3 className="text-indigo-600 font-semibold">Contact</h3>
+    <main className="py-5 px-4 bg-gray-200">
+      <div className="max-w-screen-xl mx-auto text-gray-600">
+        <div className="max-w-xl space-y-3 mb-6">
           <p className="text-gray-800 text-3xl font-semibold sm:text-4xl">
             Let us know how we can help
           </p>
-          <p>
-            We’re here to help and answer any question you might have, We look
-            forward to hearing from you .
-          </p>
         </div>
         <div>
-          <ul className="mt-12 flex flex-wrap gap-x-12 gap-y-6 items-center lg:gap-x-24">
+          <ul className="flex flex-col gap-y-6 sm:flex-row sm:gap-x-20">
             {contactMethods.map((item, idx) => (
-              <li key={idx}>
+              <li key={idx} className="flex-1">
                 <h4 className="text-gray-800 text-lg font-medium">
                   {item.title}
                 </h4>
-                <div className="mt-3 flex items-center gap-x-3">
+                <div className="mt-3 flex items-center">
                   <div className="flex-none text-gray-400">{item.icon}</div>
-                  <p>{item.contact}</p>
+                  <p className="ml-3">{item.contact}</p>
                 </div>
               </li>
             ))}
@@ -99,4 +96,5 @@ const Contact = () => {
     </main>
   );
 };
+
 export default Contact;

@@ -64,7 +64,6 @@ function Body() {
   return (
     <div>
       <div className={styles.container}>
-        {/* <p className={styles.heading}>Resume Builder</p> */}
         <SectionHeader />
         <div className={styles.toolbar}>
           <div className={styles.colors}>
@@ -90,14 +89,7 @@ function Body() {
             content={() => resumeRef.current}
           />
         </div>
-        <div className={styles.main}>
-          <div
-            style={{
-              display: "flex",
-              flexWrap: "wrap",
-              justifyContent: "center",
-            }}
-          >
+        <div className={styles.main} >
             <Editor
               sections={sections}
               information={resumeInformation}
@@ -109,7 +101,7 @@ function Body() {
               information={resumeInformation}
               activeColor={activeColor}
             />
-          </div>
+          {/* </div> */}
         </div>
       </div>
       <Contact />

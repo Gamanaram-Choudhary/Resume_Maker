@@ -13,20 +13,20 @@ const Contributor = () => {
     },
     {
       avatar:
+        "https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671122.jpg?w=740&t=st=1701463019~exp=1701463619~hmac=f6f0398ef19a145d0151030dd53a6f08b1f3220fa15009c7636152e0960afda1",
+      name: "Gamanaram Choudhary",
+      title: "Frontend and Backend Developer",
+      desc: "Backend Architect, Database Dynamo, Logic Wizard, Backend Development Prodigy.",
+      linkedin: "https://www.linkedin.com/in/gamnaram-choudhary-67860a190/",
+      twitter: "javascript:void(0)",
+    },
+    {
+      avatar:
         "https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436200.jpg?w=740&t=st=1701463071~exp=1701463671~hmac=71b565b4ca0fb4e296200ed8fc2dbbb2cacd78cd411c178798bf0de1ebab5e67",
       name: "Bikram Narayan Dhanraj",
       title: "Frontend and Backend Developer",
       desc: "Creative Designer of User Experiences,  Maestro of Frontend and Backend Design",
       linkedin: "https://www.linkedin.com/in/bikram-narayan/",
-      twitter: "javascript:void(0)",
-    },
-    {
-      avatar:
-        "https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671122.jpg?w=740&t=st=1701463019~exp=1701463619~hmac=f6f0398ef19a145d0151030dd53a6f08b1f3220fa15009c7636152e0960afda1",
-      name: "Gamanaram Harjiram Choudhary",
-      title: "Backend Developer",
-      desc: "Backend Architect, Database Dynamo, Logic Wizard, Backend Development Prodigy.",
-      linkedin: "https://www.linkedin.com/in/gamnaram-choudhary-67860a190/",
       twitter: "javascript:void(0)",
     },
   ];

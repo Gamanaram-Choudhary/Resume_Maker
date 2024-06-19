@@ -228,7 +228,7 @@ function Editor(props) {
       <div className={styles.row}>
         <InputControl
           label="Name"
-          placeholder="Enter your full name eg. Aashu"
+          placeholder="Enter your name"
           value={values.name}
           onChange={(event) =>
             setValues((prev) => ({ ...prev, name: event.target.value }))
@@ -526,7 +526,7 @@ function Editor(props) {
     setSectionTitle(sections[activeSectionKey]);
     setActiveDetailIndex(0);
     setValues({
-      name: activeInfo?.detail?.name || "Gamanaram Choudhary",
+      name: activeInfo?.detail?.name,
       overview: activeInfo?.details
         ? activeInfo.details[0]?.overview || ""
         : "",
@@ -535,20 +535,12 @@ function Editor(props) {
         ? activeInfo.details[0]?.certificationLink || ""
         : "",
       companyName: activeInfo?.details
-        ? activeInfo.details[0]?.companyName || "Microsoft"
+        ? activeInfo.details[0]?.companyName
         : "",
-      college: activeInfo?.details
-        ? activeInfo.details[0]?.college || "IIIT LUCKNOW"
-        : "",
-      location: activeInfo?.details
-        ? activeInfo.details[0]?.location || "Noida, Uttar Pradesh."
-        : "",
-      startDate: activeInfo?.details
-        ? activeInfo.details[0]?.startDate || "01/01/2020"
-        : "01/01/2020",
-      endDate: activeInfo?.details
-        ? activeInfo.details[0]?.endDate || "30//11/2023"
-        : "30//11/2023",
+      college: activeInfo?.details ? activeInfo.details[0]?.college : "",
+      location: activeInfo?.details ? activeInfo.details[0]?.location : "",
+      startDate: activeInfo?.details ? activeInfo.details[0]?.startDate : "",
+      endDate: activeInfo?.details ? activeInfo.details[0]?.endDate : "",
       points: activeInfo?.details
         ? activeInfo.details[0]?.points
           ? [...activeInfo.details[0]?.points]
@@ -557,19 +549,14 @@ function Editor(props) {
         ? [...activeInfo.points]
         : "",
       title: activeInfo?.details
-        ? activeInfo.details[0]?.title || "Software Developer"
+        ? activeInfo.details[0]?.title || ""
         : activeInfo?.detail?.title || "",
-      linkedin:
-        activeInfo?.detail?.linkedin ||
-        "https://www.linkedin.com/in/gamanaram-choudhary-660846258/",
+      linkedin: activeInfo?.detail?.linkedin,
       github: activeInfo?.details
-        ? activeInfo.details[0]?.github ||
-          "https://github.com/Gamanaram-Choudhary"
-        : activeInfo?.detail?.github ||
-          "https://github.com/Gamanaram-Choudhary",
-      phone: activeInfo?.detail?.phone || "9082563728",
-      email:
-        activeInfo?.detail?.email || "grinderprojectmanagementteam@gmail.com",
+        ? activeInfo.details[0]?.github
+        : activeInfo?.detail?.github,
+      phone: activeInfo?.detail?.phone,
+      email: activeInfo?.detail?.email,
       summary:
         typeof activeInfo?.detail !== "object"
           ? activeInfo.detail

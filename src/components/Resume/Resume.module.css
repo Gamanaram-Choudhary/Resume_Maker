@@ -1,11 +1,11 @@
 .container {
   --color: #239ce2;
-  min-width: 700px;
-  max-width: 850px;
-  margin: 0 auto;
+  min-width: 350px;
+  /* max-width: 850px; */
+  /* margin: 0 auto; */
   flex: 1.2;
   height: fit-content;
-  min-height: 900px;
+  /* min-height: 900px; */
   box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
@@ -148,3 +148,32 @@
 .hidden {
   display: none;
 }
+
+@media (min-width: 450px) {
+  .container {
+    min-width: 410px;
+    /* max-width: 600px; */
+  }
+}
+
+@media (min-width: 575px) {
+  .container {
+    min-width: 525px;
+    /* max-width: 600px; */
+  }
+}
+
+@media (min-width: 650px) {
+  .container {
+    min-width: 620px;
+    /* max-width: 600px; */
+  }
+}
+
+@media (min-width: 763px) {
+  .container {
+    min-width: 700px;
+  }
+}
+
+

@@ -1,12 +1,15 @@
+import React from 'react';
+
 const SectionHeader = () => {
   return (
-    <div className="w-[93vw] ">
-      <div className="items-start justify-between py-4 border-b md:flex">
-        <div className="max-w-lg">
-          <h3 className="text-gray-800 text-2xl font-bold">Resume Builder</h3>
-          <p className="text-gray-600 mt-2">
-            Embrace the flexibility to express your unique professional
-            identity.
+    <div className="w-full mx-auto">
+      <div className="items-start justify-between py-4 border-b md:flex md:py-6">
+        <div>
+          <h3 className="text-gray-800 text-2xl font-bold md:text-3xl">
+            Resume Maker
+          </h3>
+          <p className="text-gray-600 mt-2 md:text-lg">
+            Embrace the flexibility to express your unique professional identity.
           </p>
         </div>
         <div className="mt-6 md:mt-0">
@@ -21,4 +24,5 @@ const SectionHeader = () => {
     </div>
   );
 };
+
 export default SectionHeader;
