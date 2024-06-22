@@ -12,7 +12,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Header />} />
-          <Route path="/make" element={<Body />} />
+          <Route path="/make_resume" element={<Body />} />
         </Routes>
       </BrowserRouter>
     </div>

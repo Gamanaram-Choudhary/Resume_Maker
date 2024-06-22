@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
 .container {
   padding: 30px;
   display: flex;
@@ -5,12 +7,11 @@
   align-items: center;
   gap: 30px;
   padding-top: 0;
-  background: #d8dddb;
+  background: #d7eee5;
   min-height: 100vh;
   box-sizing: border-box;
   /* max-width: 1000px; */
 }
-
 .heading {
   font-weight: 500;
   font-size: 2.1rem;

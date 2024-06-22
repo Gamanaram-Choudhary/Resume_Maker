@@ -73,7 +73,7 @@ const Contact = () => {
     <main className="py-5 px-8 bg-gray-200">
       <div className="max-w-screen-xl lg:mx-3 text-gray-600">
         <div className="max-w-xl space-y-3 mb-6">
-          <p className="text-gray-800 text-3xl font-semibold sm:text-4xl">
+          <p className="text-gray-800 text-2xl font-semibold sm:text-3xl">
             Let us know how we can help
           </p>
         </div>

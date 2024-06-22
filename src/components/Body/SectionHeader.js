@@ -9,7 +9,10 @@ const SectionHeader = () => {
           <h3 className="text-gray-800 text-2xl font-bold md:text-3xl">
             Resume Maker
           </h3>
-          <p className="text-gray-600 mt-2 md:text-lg">
+          <p
+            className="mt-2 md:text-2xl lg:text-4xl"
+            style={{ fontFamily: "'Clicker Script', cursive" }}
+          >
             Embrace the flexibility to express your unique professional
             identity.
           </p>

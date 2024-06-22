@@ -553,7 +553,7 @@ function Editor(props) {
         activeInfo?.detail?.linkedin || "https://www.linkedin.com/example",
       github: activeInfo?.details
         ? activeInfo.details[0]?.github
-        : activeInfo?.detail?.github,
+        : activeInfo?.detail?.github || "https://www.linkedin.com/example",
       phone: activeInfo?.detail?.phone || "+91 9023XXXXXX",
       email: activeInfo?.detail?.email || "xyzuser@email.com",
       summary:
