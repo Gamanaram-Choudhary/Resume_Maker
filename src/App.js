@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import Body from "./components/Body/Body";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
+// import Contact from "./components/Contact/Contact";
 
 function App() {
   return (
@@ -14,7 +15,6 @@ function App() {
           <Route path="/make" element={<Body />} />
         </Routes>
       </BrowserRouter>
-      {/* <Body /> */}
     </div>
   );
 }

@@ -28,25 +28,24 @@ input:focus {
   border: 1px solid #239ce2;
 }
 
-/* Media queries for responsiveness */
 @media (max-width: 768px) {
   label {
-    font-size: 0.875rem; /* Adjust the label size for smaller screens */
+    font-size: 0.875rem; 
   }
 
   input {
-    padding: 8px 10px; /* Reduce padding for smaller screens */
-    font-size: 0.875rem; /* Adjust input font size for smaller screens */
+    padding: 8px 10px;
+    font-size: 0.875rem; 
   }
 }
 
 @media (max-width: 480px) {
   label {
-    font-size: 0.75rem; /* Further adjust label size for very small screens */
+    font-size: 0.75rem; 
   }
 
   input {
-    padding: 6px 8px; /* Further reduce padding for very small screens */
-    font-size: 0.75rem; /* Further adjust input font size for very small screens */
+    padding: 6px 8px; 
+    font-size: 0.75rem;
   }
 }

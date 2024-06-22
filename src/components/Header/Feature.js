@@ -71,7 +71,7 @@ const Features = () => {
           <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
             The fastest way to make Resume
           </h3>
-          <p className="mt-3">
+          <p className="mt-3" style={{ textAlign: "justify" }}>
             Empower Your Career Journey: Elevate your professional narrative
             with our all-in-one resume platform.
           </p>
@@ -79,14 +79,19 @@ const Features = () => {
         <div>
           <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {features.map((item, idx) => (
-              <li key={idx} className="space-y-3 bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+              <li
+                key={idx}
+                className="space-y-3 bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+              >
                 <div className="w-12 h-12 mx-auto bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center">
                   {item.icon}
                 </div>
                 <h4 className="text-lg text-gray-800 font-semibold">
                   {item.title}
                 </h4>
-                <p className="text-gray-600">{item.desc}</p>
+                <p className="text-gray-600" style={{ textAlign: "justify" }}>
+                  {item.desc}
+                </p>
               </li>
             ))}
           </ul>

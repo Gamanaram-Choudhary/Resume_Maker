@@ -4,7 +4,7 @@ import { X } from "react-feather";
 import InputControl from "../InputControl/InputControl";
 
 import styles from "./Editor.module.css";
-import Contact from "../Contact";
+// import Contact from "../Contact";
 
 function Editor(props) {
   const sections = props.sections;
@@ -526,13 +526,11 @@ function Editor(props) {
     setSectionTitle(sections[activeSectionKey]);
     setActiveDetailIndex(0);
     setValues({
-      name: activeInfo?.detail?.name,
-      overview: activeInfo?.details
-        ? activeInfo.details[0]?.overview || ""
-        : "",
-      link: activeInfo?.details ? activeInfo.details[0]?.link || "" : "",
+      name: activeInfo?.detail?.name || "Gamanaram Choudhary",
+      overview: activeInfo?.details ? activeInfo.details[0]?.overview : "",
+      link: activeInfo?.details ? activeInfo.details[0]?.link : "",
       certificationLink: activeInfo?.details
-        ? activeInfo.details[0]?.certificationLink || ""
+        ? activeInfo.details[0]?.certificationLink
         : "",
       companyName: activeInfo?.details
         ? activeInfo.details[0]?.companyName
@@ -549,14 +547,15 @@ function Editor(props) {
         ? [...activeInfo.points]
         : "",
       title: activeInfo?.details
-        ? activeInfo.details[0]?.title || ""
-        : activeInfo?.detail?.title || "",
-      linkedin: activeInfo?.detail?.linkedin,
+        ? activeInfo.details[0]?.title
+        : activeInfo?.detail?.title,
+      linkedin:
+        activeInfo?.detail?.linkedin || "https://www.linkedin.com/example",
       github: activeInfo?.details
         ? activeInfo.details[0]?.github
         : activeInfo?.detail?.github,
-      phone: activeInfo?.detail?.phone,
-      email: activeInfo?.detail?.email,
+      phone: activeInfo?.detail?.phone || "+91 9023XXXXXX",
+      email: activeInfo?.detail?.email || "xyzuser@email.com",
       summary:
         typeof activeInfo?.detail !== "object"
           ? activeInfo.detail
@@ -575,35 +574,19 @@ function Editor(props) {
 
     const activeInfo = information[sections[activeSectionKey]];
     setValues({
-      overview:
-        activeInfo.details[activeDetailIndex]?.overview ||
-        "Lorem ipsum overview",
-      link:
-        activeInfo.details[activeDetailIndex]?.link || "https://example.com",
+      overview: activeInfo.details[activeDetailIndex]?.overview,
+      link: activeInfo.details[activeDetailIndex]?.link,
       certificationLink:
-        activeInfo.details[activeDetailIndex]?.certificationLink ||
-        "https://certification.com",
-      companyName:
-        activeInfo.details[activeDetailIndex]?.companyName || "Microsoft",
-      location:
-        activeInfo.details[activeDetailIndex]?.location || "Redmond, WA",
-      startDate:
-        activeInfo.details[activeDetailIndex]?.startDate || "2022-01-01",
-      endDate: activeInfo.details[activeDetailIndex]?.endDate || "2023-01-01",
-      points: activeInfo.details[activeDetailIndex]?.points || [
-        "Achievement 1",
-        "Achievement 2",
-        "Achievement 3",
-      ],
-      title:
-        activeInfo.details[activeDetailIndex]?.title || "Software Engineer",
-      linkedin:
-        activeInfo.details[activeDetailIndex]?.linkedin ||
-        "https://www.linkedin.com/example",
-      github:
-        activeInfo.details[activeDetailIndex]?.github ||
-        "https://www.github.com/example",
-      college: activeInfo.details[activeDetailIndex]?.college || "IIIT Lucknow",
+        activeInfo.details[activeDetailIndex]?.certificationLink,
+      companyName: activeInfo.details[activeDetailIndex]?.companyName,
+      location: activeInfo.details[activeDetailIndex]?.location,
+      startDate: activeInfo.details[activeDetailIndex]?.startDate,
+      endDate: activeInfo.details[activeDetailIndex]?.endDate,
+      points: activeInfo.details[activeDetailIndex]?.points,
+      title: activeInfo.details[activeDetailIndex]?.title,
+      linkedin: activeInfo.details[activeDetailIndex]?.linkedin,
+      github: activeInfo.details[activeDetailIndex]?.github,
+      college: activeInfo.details[activeDetailIndex]?.college,
     });
   }, [activeDetailIndex]);
 

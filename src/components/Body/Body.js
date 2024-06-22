@@ -6,11 +6,11 @@ import Editor from "../Editor/Editor";
 import Resume from "../Resume/Resume";
 
 import styles from "./Body.module.css";
-import SectionHeader from "../SectionHeader";
-import Contact from "../Contact";
+import SectionHeader from "./SectionHeader";
+import Contact from "../Contact/Contact";
 
 function Body() {
-  const colors = ["#239ce2", "#48bb78", "#0bc5ea", "#a0aec0", "#ed8936"];
+  const colors = ["#ed8936", "#239ce2", "#48bb78", "#0bc5ea", "#a0aec0"];
   const sections = {
     basicInfo: "Basic Info",
     workExp: "Work Experience",
@@ -81,7 +81,7 @@ function Body() {
           <ReactToPrint
             trigger={() => {
               return (
-                <button>
+                <button className="bg-sky-600 rounded-lg hover:bg-sky-500 active:bg-sky-500">
                   Download <ArrowDown />
                 </button>
               );
@@ -89,18 +89,18 @@ function Body() {
             content={() => resumeRef.current}
           />
         </div>
-        <div className={styles.main} >
-            <Editor
-              sections={sections}
-              information={resumeInformation}
-              setInformation={setResumeInformation}
-            />
-            <Resume
-              ref={resumeRef}
-              sections={sections}
-              information={resumeInformation}
-              activeColor={activeColor}
-            />
+        <div className={styles.main}>
+          <Editor
+            sections={sections}
+            information={resumeInformation}
+            setInformation={setResumeInformation}
+          />
+          <Resume
+            ref={resumeRef}
+            sections={sections}
+            information={resumeInformation}
+            activeColor={activeColor}
+          />
           {/* </div> */}
         </div>
       </div>

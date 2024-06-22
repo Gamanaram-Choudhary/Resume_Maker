@@ -70,21 +70,21 @@ const Contact = () => {
   ];
 
   return (
-    <main className="py-5 px-4 bg-gray-200">
-      <div className="max-w-screen-xl mx-auto text-gray-600">
+    <main className="py-5 px-8 bg-gray-200">
+      <div className="max-w-screen-xl lg:mx-3 text-gray-600">
         <div className="max-w-xl space-y-3 mb-6">
           <p className="text-gray-800 text-3xl font-semibold sm:text-4xl">
             Let us know how we can help
           </p>
         </div>
         <div>
-          <ul className="flex flex-col gap-y-6 sm:flex-row sm:gap-x-20">
+          <ul className="flex flex-col gap-y-6 sm:flex-row sm:gap-x-10 lg:gap-x-20">
             {contactMethods.map((item, idx) => (
               <li key={idx} className="flex-1">
                 <h4 className="text-gray-800 text-lg font-medium">
                   {item.title}
                 </h4>
-                <div className="mt-3 flex items-center">
+                <div className="mt-3 flex items-start">
                   <div className="flex-none text-gray-400">{item.icon}</div>
                   <p className="ml-3">{item.contact}</p>
                 </div>

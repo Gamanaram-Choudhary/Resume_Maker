@@ -322,44 +322,48 @@ const Resume = forwardRef((props, ref) => {
           <p className={styles.subHeading}>{info.basicInfo?.detail?.title}</p>
 
           <div className={styles.links}>
-            {info.basicInfo?.detail?.email ? (
-              <a
-                href="https://mail.google.com/mail/u/0/?tab=rm#inbox?compose=new"
-                className={styles.link}
-                type="email"
-              >
-                <AtSign /> {info.basicInfo?.detail?.email}
-              </a>
-            ) : (
-              <span />
-            )}
-            {info.basicInfo?.detail?.phone ? (
-              <a onClick={PhoneCallButton} className={styles.link}>
-                <Phone /> {info.basicInfo?.detail?.phone}
-              </a>
-            ) : (
-              <span />
-            )}
-            {info.basicInfo?.detail?.linkedin ? (
-              <a
-                href="https://www.linkedin.com/in/gamanaram-choudhary-660846258/"
-                className={styles.link}
-              >
-                <Linkedin /> {info.basicInfo?.detail?.linkedin}
-              </a>
-            ) : (
-              <span />
-            )}
-            {info.basicInfo?.detail?.github ? (
-              <a
-                href="https://github.com/Gamanaram-Choudhary"
-                className={styles.link}
-              >
-                <GitHub /> {info.basicInfo?.detail?.github}
-              </a>
-            ) : (
-              <span />
-            )}
+            <div>
+              {info.basicInfo?.detail?.linkedin ? (
+                <a
+                  href="https://www.linkedin.com/in/gamanaram-choudhary-660846258/"
+                  className={styles.link}
+                >
+                  <Linkedin /> {info.basicInfo?.detail?.linkedin}
+                </a>
+              ) : (
+                <span />
+              )}
+              {info.basicInfo?.detail?.github ? (
+                <a
+                  href="https://github.com/Gamanaram-Choudhary"
+                  className={styles.link}
+                >
+                  <GitHub /> {info.basicInfo?.detail?.github}
+                </a>
+              ) : (
+                <span />
+              )}
+            </div>
+            <div>
+              {info.basicInfo?.detail?.email ? (
+                <a
+                  href="https://mail.google.com/mail/u/0/?tab=rm#inbox?compose=new"
+                  className={styles.link}
+                  type="email"
+                >
+                  <AtSign /> {info.basicInfo?.detail?.email}
+                </a>
+              ) : (
+                <span />
+              )}
+              {info.basicInfo?.detail?.phone ? (
+                <a onClick={PhoneCallButton} className={styles.link}>
+                  <Phone /> {info.basicInfo?.detail?.phone}
+                </a>
+              ) : (
+                <span />
+              )}
+            </div>
           </div>
         </div>
 
