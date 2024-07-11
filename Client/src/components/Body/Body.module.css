@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+.container {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding-top: 0;
+  background: #d7eee5;
+  min-height: 100vh;
+  box-sizing: border-box;
+  /* max-width: 1000px; */
+}
+.heading {
+  font-weight: 500;
+  font-size: 2.1rem;
+  color: #fff;
+}
+
+.toolbar {
+  width: 100%;
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.colors {
+  display: flex;
+  gap: 20px;
+  padding: 0 30px;
+}
+
+.colors .color {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  background-color: #239ce2;
+  cursor: pointer;
+}
+
+.colors .active {
+  border: 2px solid #000;
+}
+
+.toolbar button {
+  padding: 8px 16px;
+  border-radius: 5px;
+  background-color: #239ce2;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.toolbar button svg {
+  height: 20px;
+  width: 20px;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+  .colors {
+    padding: 0;
+    justify-content: center;
+  }
+
+  .colors .color {
+    height: 30px;
+    width: 30px;
+  }
+}
