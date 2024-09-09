@@ -20,7 +20,7 @@ function Sign() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:4000/signup", {
+      const response = await fetch("https://resume-maker-rosy.vercel.app/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
