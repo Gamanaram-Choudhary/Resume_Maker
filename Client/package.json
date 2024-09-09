@@ -13,6 +13,7 @@
     "react-router-dom": "^6.20.0",
     "react-scripts": "5.0.0",
     "react-to-print": "^2.14.4",
+    "resume-maker": "file:",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
