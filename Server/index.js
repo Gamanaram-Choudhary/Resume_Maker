@@ -9,7 +9,7 @@ import router from "./routes/user.js";
 const app = express();
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "https://resume-maker-fronted.vercel.app/",
     credentials: true,
   })
 );
