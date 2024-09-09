@@ -8,7 +8,7 @@ const Navbar = () => {
 
   const logout = async () => {
     try {
-      const res = await fetch("http://localhost:4000/logout", {
+      const res = await fetch("https://resume-maker-rosy.vercel.app/logout", {
         method: "GET",
         credentials: "include",
       });
@@ -23,7 +23,7 @@ const Navbar = () => {
 
   const verifyUser = async () => {
     try {
-      const res = await fetch("http://localhost:4000/verify-user", {
+      const res = await fetch("https://resume-maker-rosy.vercel.app/verify-user", {
         method: "GET",
         credentials: "include",
       });
