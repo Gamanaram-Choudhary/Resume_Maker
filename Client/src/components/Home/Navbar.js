@@ -31,7 +31,7 @@ const Navbar = () => {
       if (data.status) {
         setUser(data.user.name);
       }
-      console.log(data);
+      // console.log(data);
     } catch (error) {
       console.error(error);
     }
