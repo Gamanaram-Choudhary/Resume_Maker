@@ -149,7 +149,7 @@ const resetPassword = async (req, res, next) => {
 const verifyUser = async (req, res, next) => {
   try {
     const token = req.cookies.token;
-    console.log(req.cookies);
+    // console.log(req.cookies);
     if (!token) {
       return res
         .status(401)
