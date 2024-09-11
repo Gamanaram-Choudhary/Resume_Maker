@@ -196,11 +196,13 @@ const logout = async (req, res, next) => {
   secure: true, 
   sameSite: "none" 
 });
+    console.log('Cookies before response:', req.cookies);
+    console.log('Cookie cleared:', res.getHeader('Set-Cookie'));
+    // console.error(res.cookies, error);
     return res
       .status(200)
       .json({ status: true, message: "logout successfully." });
   } catch (error) {
-    console.error("Logout :", error);
     return res
       .status(500)
       .json({ status: false, message: "Internal Server Error" });
