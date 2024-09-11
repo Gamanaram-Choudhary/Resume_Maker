@@ -14,7 +14,7 @@ function Body() {
 
   const verifyUser = async () => {
     try {
-      const res = await fetch("http://localhost:4000/verify-user", {
+      const res = await fetch("https://resume-maker-rosy.vercel.app/verify-user", {
         method: "GET",
         credentials: "include",
       });
